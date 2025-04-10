@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+h1,h2,h3,h4,h5,h6{
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+p{
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+span{
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+body{
+  background-color: whitesmoke;
+}
+.universal_container{
+  width: 100%;
+  max-width: 85%;
+  min-width: 85%;
+  margin-inline: auto;
+}
+.nav_wrapper{
+  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.066);
+padding: 8px 0px;
+ 
+}
+.nav_logo_wrapper{
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.nav_logo_wrapper img{
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+.nav_links_wrapper_div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.nav_links_wrapper{
+  display:flex;
+  justify-content:space-between ;
+  align-items: center;
+  column-gap: 70px;
+}
+.nav_links_wrapper p{
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s linear all;
+}
+.nav_links_wrapper p:hover {
+  color: rgb(79, 93, 228);
+}
+.maginfy_wrapper{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 18px;
+}
+.maginfy_wrapper i{
+  font-size: 18px;
+}
+.call_for_questions{
+  width: fit-content;
+  padding: 0px 50px 0px 15px;
+  height: 85px;
+  background-color: rgb(79, 93, 228);
+  border-radius: 50px 0px 0px 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 15px;
+}
+.call_questions_wrapper h5{
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+.call_questions_wrapper p{
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+.call_circle{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.call_circle i{
+  color: rgb(79, 93, 228);
+  font-size: 30px;
+}
