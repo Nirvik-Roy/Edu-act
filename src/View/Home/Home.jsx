@@ -8,6 +8,9 @@ import BestCourse from './BestCourse'
 import HomeCategories from './HomeCategories'
 import HomeDiscover from './HomeDiscover'
 import OurTeam from './OurTeam'
+import Brand from './Brand'
+import Testimonial from './Testimonial'
+import Blog from './Blog'
 const Home = () => {
   return (
     <>
@@ -19,6 +22,9 @@ const Home = () => {
       <HomeCategories/>
       <HomeDiscover/>
       <OurTeam/>
+      <Brand/>
+      <Testimonial/>
+      <Blog/>
     </>
   )
 }
