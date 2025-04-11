@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/images/logo-two.png'
+import { NavLink } from 'react-router-dom'
 const Header = () => {
   return (
     <>
@@ -9,11 +10,11 @@ const Header = () => {
                 <img src={logo}/>
             </div>
             <div className='nav_links_wrapper'>
-                <p>Home</p>
-                <p>Pages</p>
-                <p>About</p>
-                <p>Courses</p>
-                <p>Contact</p>
+                <NavLink to={'/'}>Home</NavLink>
+          
+                <NavLink to={'/about'}>About</NavLink>
+                <NavLink to={'/course'}>Courses</NavLink>
+                <NavLink to={'#'}>Contact</NavLink>
                 <div className='maginfy_wrapper'>
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-regular fa-user"></i>

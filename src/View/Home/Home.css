@@ -263,7 +263,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: auto;
+    height: 100%;
 }
 
 .flexible_para_div h1 {
@@ -314,6 +314,7 @@
     font-size: 35px;
     text-align: center;
     font-weight: 600;
+    margin-top: 20px;
 }
 .service_card{
     border-radius: 10px;
@@ -459,6 +460,8 @@
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
 }
 .featured_course_div{
    background-color: rgb(255, 255, 255);
@@ -780,7 +783,7 @@ background-color: rgb(79, 93, 228);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 0px;
+    padding: 120px 0px;
 }
 .testimonial_wrapper{
     height: 100%;
@@ -953,3 +956,151 @@ background-color: rgb(79, 93, 228);
     align-items: center;
     color: rgba(196, 196, 196, 0.933);
 }
+@media(max-width:1499px){
+    .arrow_head_text svg {
+        width: 55px;
+        fill: rgb(245, 113, 5);
+        margin-top: 0px;
+        margin-left: 3px;
+    }
+    .banner_head {
+      color: #2A254D;
+      font-size: 60px;
+      line-height: auto;
+      font-family: 'Urbanist', sans-serif;
+      font-weight: 700;
+  }
+  .featured_course_div svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 125px;
+    margin: auto;
+    fill: rgb(247, 116, 13);
+    transition: 500ms ease;
+    z-index: -1;
+    width: calc(100% - 63px);
+}
+.testimonial_cards_wrapper {
+    transform: translateY(-32%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  }
+  @media(max-width:1399px){
+    .featured_course_div svg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 130px;
+        margin: auto;
+        fill: rgb(247, 116, 13);
+        transition: 500ms ease;
+        z-index: -1;
+        width: calc(100% - 63px);
+    }
+    .banner_head {
+      color: #2A254D;
+      font-size: 55px;
+      line-height: auto;
+      font-family: 'Urbanist', sans-serif;
+      font-weight: 700;
+  }
+  .big_svg {
+    width: 624px;
+    height: auto;
+    position: absolute;
+    top: -80px;
+    right: 100px;
+    z-index: 8;
+}
+.flexible_para_div h1 {
+    position: absolute;
+    top: -3px;
+    font-size: 17px;
+    color: white;
+}
+.flexible_classes_wrapper i {
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    bottom: 38px;
+    left: 20px;
+}
+  }
+  @media(max-width:1345px){
+    .featured_course_div svg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 135px;
+        margin: auto;
+        fill: rgb(247, 116, 13);
+        transition: 500ms ease;
+        z-index: -1;
+        width: calc(100% - 63px);
+    }
+  }
+  @media(max-width:1299px){
+    .about_img {
+        width: 100%;
+        max-width: 73%;
+        min-width: 73%;
+        height: 660px;
+        border-radius: 200px;
+        overflow: hidden;
+    }
+    .featured_course_div svg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 145px;
+        margin: auto;
+        fill: rgb(247, 116, 13);
+        transition: 500ms ease;
+        z-index: -1;
+        width: calc(100% - 63px);
+    }
+    .banner_head {
+      color: #2A254D;
+      font-size: 52px;
+      line-height: auto;
+      font-family: 'Urbanist', sans-serif;
+      font-weight: 700;
+  }
+  .big_svg {
+    width: 624px;
+    height: auto;
+    position: absolute;
+    top: -80px;
+    right: 100px;
+    z-index: 8;
+}
+.flexible_para_div h1 {
+    position: absolute;
+    top: -3px;
+    font-size: 17px;
+    color: white;
+}
+.flexible_classes_wrapper i {
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    bottom: 38px;
+    left: 20px;
+}
+  }
+  @media(max-width:1245px){
+    .featured_course_div svg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 152px;
+        margin: auto;
+        fill: rgb(247, 116, 13);
+        transition: 500ms ease;
+        z-index: -1;
+        width: calc(100% - 63px);
+    }
+  }

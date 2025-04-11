@@ -1,0 +1,19 @@
+.course_banner{
+    padding: 140px 0px;
+    background:linear-gradient(rgba(0, 0, 0, 0.754),rgba(0, 0, 0, 0.754)),url('../../assets/images/backgrounds/page-header-bg-1-2.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+}
+.course_banner h1{
+    color: white;
+    font-size: 50px;
+}
+.course_banner h4{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 4px;
+}
