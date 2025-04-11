@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import img from '../assets/images/footer-logo-two.png'
+import img from '../../public/Screenshot_2025-04-11_193306-removebg-preview.png'
 const Footer = () => {
   return (
     <>
@@ -42,7 +42,10 @@ const Footer = () => {
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.html"><img src={img} class="img-fluid" alt="logo"/></a>
+                                <a href="index.html"><img src={img} style={{
+                                    height:'80px',
+                                    objectFit:'contain'
+                                }} class="img-fluid" alt="logo"/></a>
                             </div>
                             <div class="footer-text">
                                 <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
