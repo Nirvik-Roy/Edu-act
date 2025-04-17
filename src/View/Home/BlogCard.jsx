@@ -10,8 +10,12 @@ const BlogCard = () => {
         return (
             <>
             <div className='blog_card' key={i}>
+            
         <div className='blog_card_img'>
             <img src={e}/>
+            <div className='blog_card_overlay'>
+            <i class="fa-solid fa-plus"></i>
+            </div>
         </div>
         <div className='blog_card_details_div'>
             <div className='blog_details_head_wrapper'>
@@ -34,7 +38,8 @@ const BlogCard = () => {
                                                         </div>
                                                     </div>
                                                     <div className='blog_small_circle'>
-                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                    <i class="fa-solid fa-arrow-right black_arrow"></i>
+                                                    <i class="white_arrow fa-solid fa-arrow-right"></i>
                                                     </div>
                                                 </div>
         </div>

@@ -14,7 +14,7 @@ const Header = () => {
           
                 <NavLink to={'/about'}>About</NavLink>
                 <NavLink to={'/course'}>Courses</NavLink>
-                <NavLink to={'#'}>Contact</NavLink>
+                <NavLink to={'/contact'}>Contact</NavLink>
                 <div className='maginfy_wrapper'>
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-regular fa-user"></i>

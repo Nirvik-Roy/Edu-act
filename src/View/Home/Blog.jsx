@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import BlogCard from './BlogCard'
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Blog = () => {
+    useEffect(() => {
+              AOS.init({
+                duration: 1000, // animation duration in ms
+                once: true,     // whether animation should happen only once
+              });
+            }, []);
   return (
     <>
-    <div style={{
+    <div data-aos='fade-up' style={{
         background:'white'
     }}>
  <div className='universal_container blog_wrapper'>

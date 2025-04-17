@@ -1,11 +1,18 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import TestimonialCard from './TestimonialCard'
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Testimonial = () => {
+  useEffect(() => {
+            AOS.init({
+              duration: 1000, // animation duration in ms
+              once: true,     // whether animation should happen only once
+            });
+          }, []);
   return (
     <>
     
-    <div className='testimonial_wrapper'>
+    <div className='testimonial_wrapper' data-aos='fade-up'>
       <h2 className='arrow_head_text' style={{
         textAlign:'center'
       }}>Testimonial <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 13">
@@ -22,11 +29,12 @@ const Testimonial = () => {
 
                                   
       </div>
-      <div style={{
+      <div data-aos='fade-up' style={{
         background:'white',
-        borderBottom:'1px solid rgb(231, 231, 231)'
+        borderBottom:'1px solid rgb(231, 231, 231)',
+        height:'40vh',
       }}>
-<div className='testimonial_cards_wrapper universal_container'>
+<div className='testimonial_cards_wrapper ' >
                                         <TestimonialCard/>
                                     </div>
       </div>

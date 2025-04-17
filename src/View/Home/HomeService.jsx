@@ -1,6 +1,14 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './Home.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 const HomeService = () => {
+      useEffect(() => {
+          AOS.init({
+            duration: 1000, // animation duration in ms
+            once: true,     // whether animation should happen only once
+          });
+        }, []);
   return (
     <>
       <div className='home_service_wrapper'>
@@ -23,7 +31,7 @@ const HomeService = () => {
                                     {[1,2,3,4].map((e,i)=>{
                                         return (
                                             <>
-                                            <div className='service_card'>
+                                            <div data-aos='fade-up' data-aos-delay={i * 100} className='service_card'>
                                            
                                         <div className='service-two__icon'>
                                         {i === 0 ? <i class="fa-solid fa-book"></i> : i===1 ? <i class="fa-regular fa-lightbulb"></i> : i ===2 ? <i class="fa-solid fa-laptop"></i> : i===3 ? <i class="fa-solid fa-atom"></i> : ''}

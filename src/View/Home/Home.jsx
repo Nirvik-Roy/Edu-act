@@ -14,7 +14,10 @@ import Blog from './Blog'
 const Home = () => {
   return (
     <>
-      <Banner/>
+    <div style={{
+      overflow:'hidden'
+    }}>
+    <Banner/>
       <HomeAbout/>
       <HomeService/>
       <HomeCounter/>
@@ -25,6 +28,8 @@ const Home = () => {
       <Brand/>
       <Testimonial/>
       <Blog/>
+    </div>
+   
     </>
   )
 }

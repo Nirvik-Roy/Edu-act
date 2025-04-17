@@ -7,7 +7,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import MainLayout from './MainLayout/MainLayout'
 import Course from './View/Course/Course'
 import About from './View/About/About'
-
+import CourseDetails from './View/Course/CourseDetails'
+import Contact from './View/Contact/Contact'
 function App() {
   return (
     <>
@@ -17,6 +18,8 @@ function App() {
           <Route path='' element={<Home/>}/>
           <Route path='/course' element={<Course/>}/>
           <Route path='/about' element={<About/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/course-details' element={<CourseDetails/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

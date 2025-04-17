@@ -1,11 +1,19 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import team from '../../assets/images/team/team-2-1.jpg'
 import team2 from '../../assets/images/team/team-2-2.jpg'
 import team3 from '../../assets/images/team/team-2-3.jpg'
+import AOS from "aos";
+import "aos/dist/aos.css";
 const OurTeam = () => {
+  useEffect(() => {
+            AOS.init({
+              duration: 1000, // animation duration in ms
+              once: true,     // whether animation should happen only once
+            });
+          }, []);
   return (
     <>
-      <div className='our_team_wrapper'>
+      <div className='our_team_wrapper' data-aos='fade-up'>
       <h2 className='arrow_head_text' style={{
         textAlign:'center'
       }}>Our Team <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 13">
@@ -21,12 +29,90 @@ const OurTeam = () => {
 
                                     <div className='team_wrapper universal_container'>
                                         <div className='team_div'>
+                                        <div className='team_overlay'>
+                                          <div>
+                                            <h1>Aleesha Brown</h1>
+                                            <p>Web Developer</p>
+                                            <div style={{
+                                              display:'flex',
+                                              justifyContent:'center',
+                                              alignItems:'center',
+                                              columnGap:'15px'
+
+                                            }}>
+                                              <div className='blue_circle_div animate_1'>
+                                              <i class="fa-brands fa-facebook-f"></i>
+                                              </div>
+
+
+                                              <div className='blue_circle_div animate_2'>
+                                              <i class="fa-brands fa-linkedin-in"></i>
+                                              </div>
+
+                                              <div className='blue_circle_div animate_3'>
+                                              <i class="fa-brands fa-youtube"></i>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
                                             <img src={team}/>
                                         </div>
                                         <div className='team_div'>
+                                        <div className='team_overlay'>
+                                        <div>
+                                            <h1>Aleesha Brown</h1>
+                                            <p>Web Developer</p>
+                                            <div style={{
+                                              display:'flex',
+                                              justifyContent:'center',
+                                              alignItems:'center',
+                                              columnGap:'15px'
+
+                                            }}>
+                                              <div className='blue_circle_div animate_1'>
+                                              <i class="fa-brands fa-facebook-f"></i>
+                                              </div>
+
+
+                                              <div className='blue_circle_div animate_2'>
+                                              <i class="fa-brands fa-linkedin-in"></i>
+                                              </div>
+
+                                              <div className='blue_circle_div animate_3'>
+                                              <i class="fa-brands fa-youtube"></i>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
                                             <img src={team2}/>
                                         </div>
                                         <div className='team_div'>
+                                        <div className='team_overlay'>
+                                        <div>
+                                            <h1>Aleesha Brown</h1>
+                                            <p>Web Developer</p>
+                                            <div style={{
+                                              display:'flex',
+                                              justifyContent:'center',
+                                              alignItems:'center',
+                                              columnGap:'15px'
+
+                                            }}>
+                                              <div className='blue_circle_div animate_1'>
+                                              <i class="fa-brands fa-facebook-f"></i>
+                                              </div>
+
+
+                                              <div className='blue_circle_div animate_2'>
+                                              <i class="fa-brands fa-linkedin-in"></i>
+                                              </div>
+
+                                              <div className='blue_circle_div animate_3'>
+                                              <i class="fa-brands fa-youtube"></i>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
                                             <img src={team3}/>
                                         </div>
                                     </div>

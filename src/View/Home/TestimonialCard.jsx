@@ -1,10 +1,39 @@
-import React from 'react'
+import React ,{useRef,useState,useEffect}from 'react'
 import img2 from '../../assets/images/course/author-1.png'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination,Autoplay, Navigation } from 'swiper/modules';
 const TestimonialCard = () => {
+      const NextArrow = () =>{
+        return(
+            <button ><i class="fa-solid fa-arrow-left"></i></button>
+        )
+      }
     return (
         <>
-        {[1,2,3].map((e,i)=>(
-            <div className={ i === 1 ? 'testimonial_card_1 testimonial_card_active' : 'testimonial_card_1 '}>
+          <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        centeredSlides={true}
+        loop={true}
+        speed={1000}
+        modules={[Autoplay,Navigation]}
+        autoplay={{
+        delay: 2500, // 2.5 seconds
+        disableOnInteraction: false,
+      }}
+      
+  
+      
+      >
+
+{[1,2,3,4,5,6].map((e,i)=>(
+            <SwiperSlide>
+            <div className= 'testimonial_card_1'>
                 <div className='testimonial_rating_wrapper'>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -34,7 +63,17 @@ const TestimonialCard = () => {
                     </g>
                 </svg>
             </div>
+            </SwiperSlide>
+           
         ))}
+      </Swiper>
+        
+
+     {/* <div className='swiper_slider_button_wrapper'>
+        <button ref={prevRef}><i class="fa-solid fa-arrow-left"></i></button>
+        <button ref={nextRef}><i class="fa-solid fa-arrow-right"></i></button>
+     </div> */}
+      
             
         </>
     )

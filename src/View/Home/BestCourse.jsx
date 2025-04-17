@@ -1,10 +1,45 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import img from '../../assets/images/course/course-2-1.png'
 import img2 from '../../assets/images/course/author-1.png'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const BestCourse = () => {
+    const PrevArrow = ({onClick}) =>{
+        return(
+            <i onClick={onClick} class="fa-solid fa-arrow-right previous_arrow"></i>
+        )
+
+    }
+    const NextArrow = ({onClick}) =>{
+        return(
+            <i onClick={onClick} class="fa-solid fa-arrow-left next_arrow"></i>
+        )
+
+    }
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows:true,
+        autoplay:true,
+        autoplaySpeed:1000,
+        prevArrow:<PrevArrow/>,
+        nextArrow:<NextArrow/>
+      };
+         useEffect(() => {
+                  AOS.init({
+                    duration: 1000, // animation duration in ms
+                    once: true,     // whether animation should happen only once
+                  });
+            }, []);
   return (
     <>
-      <div className='universal_container best_course_wrapper'>
+      <div data-aos='fade-up' className='universal_container best_course_wrapper'>
       <h2 className='arrow_head_text'>Best Course <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 13">
                                         <g clip-path="url(#clip0_324_36194)">
                                             <path d="M10.5406 6.49995L0.700562 12.1799V8.56995L4.29056 6.49995L0.700562 4.42995V0.819946L10.5406 6.49995Z"></path>
@@ -15,7 +50,10 @@ const BestCourse = () => {
                                     </svg></h2>
                                     <h1>Featured Course On This Month</h1>
 
-                                    <div className='featured_course_wrapper'>
+                                    <div className='featured_course_wrapper' style={{
+                                        position:'relative'
+                                    }}>
+                                    <Slider {...settings}>
                                     {[1,2,3].map((e,i)=>(
                                         <div className='featured_course_div'>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 353 177">
@@ -57,6 +95,8 @@ const BestCourse = () => {
 
                                         </div>
                                     ))}
+                                    </Slider>
+                                  
                                        
                                     </div>
       </div> 
