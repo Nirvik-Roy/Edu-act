@@ -36,6 +36,34 @@ body{
 padding: 8px 0px;
  position: relative;
  z-index: 99;
+ transition: 0.5s ease-in all;
+ background-color: white;
+}
+.nav_wrapper2{
+  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.066);
+padding: 8px 0px;
+ position: relative;
+ z-index: 99;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ max-width: 100%;
+ min-width: 100%;
+ background-color: white;
+ z-index: 99999999;
+ transition: 0.5s ease-in all;
+ transform: translateY(0%);
+ animation: transformnav 0.5s linear  1  ;
+}
+@keyframes transformnav {
+  0%{
+    transform: translateY(-100%);
+  }50%{
+    transform: translateY(-50%);
+  }100%{
+    transform: translateY(0%);
+  }
 }
 .nav_logo_wrapper{
   width: 150px;
@@ -290,4 +318,116 @@ color: #ff5e14;
 .footer-menu li a {
 font-size: 14px;
 color: rgb(169, 164, 208);
+}
+.sidebar_wrapper{
+  width: 100%;
+  height: 100vh;
+  background-color: #605d7a67; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  z-index: 9999999999999999;
+  transition: 0.4s ease-in all;
+  transform: translateX(-100%);
+}
+.sidebar_wrapper2{
+  width: 100%;
+  height: 100vh;
+  background-color: #605d7a67; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  z-index: 9999999999999999;
+  transition: 0.5s ease-in all;
+}
+.sidebar_main_div::-webkit-scrollbar{
+  display: none;
+}
+.sidebar_main_div{
+  z-index: 99999999999999999;
+  background-color: black;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  padding: 30px 10px;
+  overflow-y: scroll;
+  position: relative;
+  transform: translateX(-100%);
+  transition: 0.3s 550ms ease-in all;
+}
+.sidebar_main_div2::-webkit-scrollbar{
+  display: none;
+}
+.sidebar_main_div2{
+  z-index: 99999999999999999;
+  background-color: black;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  padding: 30px 10px;
+  overflow-y: scroll;
+  position: relative;
+  transition: 0.3s 550ms ease-in all;
+}
+.fa-xmark{
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.sidebar_logo_div{
+  width: 130px;
+  height: 70px;
+}
+.sidebar_logo_div img{
+  width: 100%;
+  height: 100%;
+}
+.sidebar_nav_links_wrapper a{
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+ padding: 20px 0px 10px 0px;
+
+  border-bottom: 1px solid rgb(84, 84, 84);
+}
+.contact_us_sidebar{
+  margin-top: 20px;
+  margin-bottom: 50px
+}
+.contact_us_sidebar p{
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+
+}
+.mail_div i{
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #4f69ed;
+  color: white;
+}
+.mail_div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 15px;
+}
+@media(max-width:800px){
+  .single-cta{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }

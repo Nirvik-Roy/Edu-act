@@ -29,7 +29,25 @@ const BestCourse = () => {
         autoplay:true,
         autoplaySpeed:1000,
         prevArrow:<PrevArrow/>,
-        nextArrow:<NextArrow/>
+        nextArrow:<NextArrow/>,
+        responsive: [
+            {
+              breakpoint: 1099,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+               
+              }
+            },
+            {
+                breakpoint: 799,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                 
+                }
+              },
+        ]
       };
          useEffect(() => {
                   AOS.init({
@@ -86,7 +104,9 @@ const BestCourse = () => {
                                             <p>PROJECT MANAGER</p>
                                             </div>
                                         </div>
-                                        <div className='tutor_price'>
+                                        <div className='tutor_price' style={{
+                                            marginLeft:'auto'
+                                        }}>
                                         <h6>$473.00</h6>
                                         <p>15 LESSONS</p>
                                         </div>

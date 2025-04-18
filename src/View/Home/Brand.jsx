@@ -13,6 +13,24 @@ const Brand = () => {
     arrows:false,
     autoplay:true,
     autoplaySpeed:1000,
+    responsive: [
+      {
+        breakpoint: 699,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+         
+        }
+      },
+      {
+        breakpoint: 499,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+         
+        }
+      },
+    ]
   };
   return (
     <>

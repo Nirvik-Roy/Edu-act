@@ -25,6 +25,35 @@ const TestimonialCard = () => {
         autoplay={{
         delay: 2500, // 2.5 seconds
         disableOnInteraction: false,
+        
+      }}
+      breakpoints={{
+       320:{
+        slidesPerView:1,
+        spaceBetween:0,
+       },
+       480:{
+        slidesPerView:1,
+        spaceBetween:0,
+       },
+       768:{
+        slidesPerView:1,
+        spaceBetween:0,
+       },
+       999:{
+        slidesPerView:1,
+        spaceBetween:0,
+       },
+       1000:{
+        slidesPerView:3,
+       },
+       1299:{
+        slidesPerView:3,
+        
+       },
+       1500:{
+        slidesPerView:3,
+       },
       }}
       
   

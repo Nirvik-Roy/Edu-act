@@ -32,7 +32,7 @@ const Testimonial = () => {
       <div data-aos='fade-up' style={{
         background:'white',
         borderBottom:'1px solid rgb(231, 231, 231)',
-        height:'40vh',
+       
       }}>
 <div className='testimonial_cards_wrapper ' >
                                         <TestimonialCard/>

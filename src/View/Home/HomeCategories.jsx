@@ -14,6 +14,32 @@ const HomeCategories = () => {
     arrows:false,
     autoplay:true,
     autoplaySpeed:2000,
+    responsive: [
+      {
+        breakpoint: 1099,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+         
+        }
+      },
+      {
+        breakpoint: 799,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+         
+        }
+      },
+      {
+        breakpoint: 499,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+         
+        }
+      },
+    ]
   };
    useEffect(() => {
                     AOS.init({
