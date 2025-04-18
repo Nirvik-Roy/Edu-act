@@ -11,10 +11,10 @@ const Sidebar = ({sidebarFunction,sideBaropen}) => {
             <img src={logo}/>
           </div>
           <div className='sidebar_nav_links_wrapper'>
-            <NavLink>Home</NavLink>
-            <NavLink>About</NavLink>
-            <NavLink>Courses</NavLink>
-            <NavLink>Contact</NavLink>
+            <NavLink to={'/'}>Home</NavLink>
+            <NavLink to={'/about'}>About</NavLink>
+            <NavLink to={'/course'}>Courses</NavLink>
+            <NavLink to={'/contact'}>Contact</NavLink>
           </div>
           <div className='contact_us_sidebar'>
             <p>Contact Us</p>
