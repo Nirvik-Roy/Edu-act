@@ -3,7 +3,7 @@ import img from '../../assets/images/course/course-detail-2.jpg'
 import img2 from '../../assets/images/course/author-7.png'
 import CourseTabs from './CourseTabs'
 import CourseFeatures from './CourseFeatures'
-import CourseLatest from './CourseLAtest'
+import CourseLatest from './CourseLatest'
 const CourseDetails = () => {
   useEffect(()=>{
 window.scrollTo({top:0,behavior:'instant'})
