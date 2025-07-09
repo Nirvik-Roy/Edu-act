@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import { Link } from 'react-router-dom'
-import img from '../../public/Screenshot_2025-04-11_193306-removebg-preview.png'
+import img from '../assets/images/footer-logo.png'
 import AOS from "aos";
 import "aos/dist/aos.css";
 const Footer = () => {
